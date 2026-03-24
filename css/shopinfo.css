@@ -229,7 +229,7 @@
 ────────────────────────────────────────── */
 @media (max-width: 600px) {
   .page-hero {
-    height: 200px;
+    height: 160px;
   }
 
   .si-row {
