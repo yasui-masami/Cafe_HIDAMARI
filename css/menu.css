@@ -61,7 +61,7 @@
   display: flex;
   justify-content: center;
   gap: 10px;
-  margin: 0 0 36px;
+  margin: 36px 0;
   flex-wrap: wrap;
 }
 
@@ -71,10 +71,11 @@ button.menu-tab {
   font-family: var(--font-gothic);
   font-size: 20px;
   font-weight: 700;
+  line-height: 1; /* ← 追加：行ボックスを均一にして上下余白を揃える */
   color: #75513c;
   border: 2px solid #75513c;
   border-radius: 30px;
-  padding: 6px 22px;
+  padding: 10px 22px;
   letter-spacing: 0.05em;
   cursor: pointer;
   transition: all 0.2s;
