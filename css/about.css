@@ -328,7 +328,7 @@ br.br-pc  { display: block; }
   .about-deco3 {
     width: clamp(160px, 70vw, 280px);
     top: 49%;
-    left: 40%;
+    left: 46%;
     transform: translate(-50%, -50%);
     z-index: 0;
     opacity: 0.6;
