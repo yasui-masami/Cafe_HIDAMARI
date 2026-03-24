@@ -816,8 +816,8 @@ section[id] { scroll-margin-top: 130px; }
   .nav-ja { font-size: 11px; }
   .nav-link { padding: 14px 20px; }
   .nav-list { width: 200px; height: 400px; }
-  .nav-toggle { top: 1.5vw; right: 12px; width: 28px; height: 28px; padding: 4px; }
-  .nav-toggle span { width: 18px; }
+  .nav-toggle { top: 1.5vw; right: 24px; width: 40px; height: 40px; padding: 6px; }
+  .nav-toggle span { width: 28px; }
 
   .main-inner { padding: 16px 12px 40px; gap: 16px; }
   .card { padding: 20px 16px 16px; }
@@ -833,9 +833,9 @@ section[id] { scroll-margin-top: 130px; }
   #news .news-list { margin-bottom: 0; }
   #news .card-foot { padding-bottom: 10px !important; }
 
-  .about-bubble { font-size: 13px; padding: 22px 22px 70px; max-width: 320px; }
-  .about-bg-img { width: 140%; height: 100%; }
-  .about-cup-img { width: 90px; bottom: -5%; left: -15%; }
+  .about-bubble { font-size: 12px; padding: 22px 22px 70px; max-width: 320px; }
+  .about-bg-img { width: 150%; height: 96%; left: -20px; } /* ← left を追加して左にオフセット */
+  .about-cup-img { width: 70px; bottom: 5%; left: -5%; }
   #about .card-foot { padding-bottom: 15px; margin-top: 0; }
   #about { margin-top: 0px; padding-bottom: 0; height: auto; min-height: unset; }
   #about .about-wrap { padding-bottom: 0; margin-bottom: 0; gap: 5px; }
@@ -846,9 +846,13 @@ section[id] { scroll-margin-top: 130px; }
   .menu-name  { font-size: 15px; }
   .menu-price { font-size: 15px; }
 
-  .row-2col { gap: 16px; }
+  .row-2col { gap: 16px; width: 100%; max-width: 100%; margin: 0; }
 
-  .row-2col .card { width: 100%; max-width: 100%; margin: 0 auto; }
+  .row-2col .card { width: 100%; max-width: 100%; margin: 0; overflow: hidden; }
+
+  #about { overflow: hidden; }
+
+  .sec-deco { width: 50px; }
 
   .card-foot { justify-content: center; min-height: auto;}
 
@@ -861,7 +865,8 @@ section[id] { scroll-margin-top: 130px; }
   .shop-details { flex-direction: column; gap: 16px; }
   .shop-map { max-width: 100%; }
 
-  .footer-copy { font-size: 14px;}
+  .shop-plants { display: none; }
+  .footer-copy { font-size: 10px;}
   .sns-btn img { width: 40px; height: 40px;}
 
   .pagetop { position: absolute; top: -30px; right: 8px; bottom: auto; left: auto; width: 80px; height: 80px; opacity: 1; pointer-events: auto; }
