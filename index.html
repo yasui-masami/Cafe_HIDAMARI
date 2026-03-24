@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe and Bakery HIDAMARI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="hero-wood-wrap">
+  <img class="hero-wood-img" src="images/common/bg_wood1.png" alt="" aria-hidden="true">
+  <a href="index.html" class="hero-logo-link">
+    <img class="hero-logo-img" src="images/common/logo.png" alt="Cafe and Bakery HIDAMARI">
+  </a>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <nav class="global-nav">
+      <button class="nav-toggle" id="js-toggle" aria-label="メニュー" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-list" id="js-nav">
+        <li class="nav-item">
+          <a href="news.html" class="nav-link">
+            <span class="nav-en">News</span>
+            <span class="nav-ja">お知らせ</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <img class="nav-flower" src="images/common/deco-flower.png" alt="" aria-hidden="true">
+          <a href="about.html" class="nav-link">
+            <span class="nav-en">About us</span>
+            <span class="nav-ja">私たちについて</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <img class="nav-flower" src="images/common/deco-flower.png" alt="" aria-hidden="true">
+          <a href="menu.html" class="nav-link">
+            <span class="nav-en">Menu</span>
+            <span class="nav-ja">メニュー</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <img class="nav-flower" src="images/common/deco-flower.png" alt="" aria-hidden="true">
+          <a href="shopinfo.html" class="nav-link">
+            <span class="nav-en">Shop Info</span>
+            <span class="nav-ja">店舗情報</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-slides">
+    <div class="hero-slide is-active">
+      <img class="hero-img" src="images/top/main-visual.jpg" alt="カフェ店内の様子">
+      <div class="hero-overlay"></div>
+      <div class="hero-text">
+        <span class="hero-text-r">優しい光に包まれて。</span>
+        <span class="hero-text-l">焼きたての香りと</span>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <img class="hero-img" src="images/top/main-visual2.jpg" alt="コーヒーとパン">
+      <div class="hero-overlay"></div>
+      <div class="hero-text">
+        <span class="hero-text-r">毎日の幸せを。</span>
+        <span class="hero-text-l">丁寧に淹れた一杯と</span>
+      </div>
+    </div>
+    <div class="hero-slide">
+      <img class="hero-img" src="images/top/main-visual3.jpg" alt="陽だまりの店内">
+      <div class="hero-overlay"></div>
+      <div class="hero-text">
+        <span class="hero-text-r">場所がここにあります。</span>
+        <span class="hero-text-l">ほっとひと息つける</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hero-dots-wrap">
+  <div class="hero-dots">
+    <button class="hero-dot is-active" data-slide="0" aria-label="スライド1"></button>
+    <button class="hero-dot"           data-slide="1" aria-label="スライド2"></button>
+    <button class="hero-dot"           data-slide="2" aria-label="スライド3"></button>
+  </div>
+</div>
+
+<div class="page-wrap">
+<main class="main-inner">
+
+  <div class="row-2col">
+
+    <section class="card" id="news">
+      <div class="sec-head">
+        <img class="sec-deco" src="images/top/reaf1.png" alt="" aria-hidden="true">
+        <h2 class="sec-title">News</h2>
+        <img class="sec-deco sec-deco--r" src="images/top/reaf2.png" alt="" aria-hidden="true">
+      </div>
+      <ul class="news-list">
+        <li class="news-item">
+          <div class="news-thumb"><img src="images/news/news1.jpg" alt="新年のご挨拶"></div>
+          <div class="news-body">
+            <time class="news-date" datetime="2026-01-05">2026/01/05</time>
+            <p class="news-head">【新年のご挨拶】</p>
+            <p class="news-text">あけましておめでとうございます。<br>本年もどうぞよろしくお願いいたします。</p>
+          </div>
+        </li>
+        <li class="news-rule" role="separator"></li>
+        <li class="news-item">
+          <div class="news-thumb"><img src="images/news/news2.jpg" alt="年末年始のお知らせ"></div>
+          <div class="news-body">
+            <time class="news-date" datetime="2025-12-01">2025/12/01</time>
+            <p class="news-head">【年末年始のお知らせ】</p>
+            <p class="news-text">誠に勝手ながら、<br>12月31日(水)〜1月4日(日)までお休みをいただきます。</p>
+          </div>
+        </li>
+        <li class="news-rule" role="separator"></li>
+        <li class="news-item">
+          <div class="news-thumb"><img src="images/news/news3.jpg" alt="新メニュー"></div>
+          <div class="news-body">
+            <time class="news-date" datetime="2025-10-10">2025/10/10</time>
+            <p class="news-head">【新メニュー】</p>
+            <p class="news-text">「アボカドサンドウィッチ」が登場しました。</p>
+          </div>
+        </li>
+      </ul>
+      <div class="card-foot"><a href="news.html" class="more-btn">▶ お知らせを見る</a></div>
+    </section>
+
+    <section class="card" id="about">
+      <div class="sec-head">
+        <img class="sec-deco" src="images/top/reaf1.png" alt="" aria-hidden="true">
+        <h2 class="sec-title">About us</h2>
+        <img class="sec-deco sec-deco--r" src="images/top/reaf2.png" alt="" aria-hidden="true">
+      </div>
+      <div class="about-wrap">
+        <div class="about-bubble">
+          <img class="about-bg-img" src="images/top/bg_about.png" alt="" aria-hidden="true">
+          <img class="about-cup-img" src="images/top/deco-coffee.png" alt="コーヒーカップのイラスト" aria-hidden="true">
+          <p class="about-p1">Cafe and Bakery HIDАМARIは<br>自然の光と木のぬくもりに包まれた<br>ほっとひと息つける場所です。</p>
+          <p class="about-p2">丁寧に淹れたコーヒーと<br>毎日焼き上げるパンとともに<br>陽だまりのような<br>やさしい時間をお届けします。</p>
+        </div>
+      </div>
+      <div class="card-foot"><a href="about.html" class="more-btn">▶ こだわりを見る</a></div>
+    </section>
+
+  </div>
+
+  <section class="card" id="menu">
+    <div class="sec-head">
+      <img class="sec-deco" src="images/top/reaf1.png" alt="" aria-hidden="true">
+      <h2 class="sec-title">Menu</h2>
+      <img class="sec-deco sec-deco--r" src="images/top/reaf2.png" alt="" aria-hidden="true">
+    </div>
+    <div class="menu-grid">
+      <div class="menu-item">
+        <div class="menu-photo"><img src="images/top/menu-coffee.jpg" alt="コーヒーと焼き菓子セット"></div>
+        <p class="menu-name">コーヒーと焼き菓子セット</p>
+        <p class="menu-price">¥750（税込み）</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-photo"><img src="images/top/menu-bread_cookie.jpg" alt="本日のパンと手作りクッキーセット"></div>
+        <p class="menu-name">本日のパンと手作りクッキーセット</p>
+        <p class="menu-price">¥950（税込み）</p>
+      </div>
+      <div class="menu-item">
+        <div class="menu-photo"><img src="images/top/menu-sandwich.jpg" alt="モーニング・サンドウィッチセット"><span class="menu-photo-label">〜11:30まで</span></div>
+        <p class="menu-name">モーニング・サンドウィッチセット</p>
+        <p class="menu-price">¥1,150（税込み）</p>
+      </div>
+    </div>
+    <div class="card-foot card-foot--center"><a href="menu.html" class="more-btn">▶ メニューを見る</a></div>
+  </section>
+
+  <section class="card" id="shopinfo">
+    <div class="sec-head">
+      <img class="sec-deco" src="images/top/reaf1.png" alt="" aria-hidden="true">
+      <h2 class="sec-title">Shop Info</h2>
+      <img class="sec-deco sec-deco--r" src="images/top/reaf2.png" alt="" aria-hidden="true">
+    </div>
+    <div class="shop-layout">
+      <div class="shop-info">
+        <div class="shop-access-row">
+          <div class="shop-row">
+            <img class="shop-icon" src="images/top/icon-accsess.png" alt="" aria-hidden="true">
+            <div>
+              <p class="shop-label">アクセス</p>
+              <p class="shop-addr">茨城県つくば市○○１－２１</p>
+              <p class="shop-sub1">・○○駅より徒歩６分</p>
+              <p class="shop-sub1">・駐車場あり（３台）</p>
+            </div>
+          </div>
+          <div class="shop-plants" aria-hidden="true">
+            <img class="shop-plant-img plant-flower1" src="images/top/flower.png" alt="">
+            <img class="shop-plant-img plant-flower2" src="images/top/flower.png" alt="">
+            <img class="shop-plant-img plant-dog" src="images/top/dog.png" alt="">
+            <img class="shop-plant-img plant-footprint" src="images/top/dog-footprint.png" alt="">
+          </div>
+        </div>
+        <div class="shop-divider-h shop-divider-access"></div>
+        <div class="shop-details">
+          <div class="shop-detail">
+            <img class="shop-icon" src="images/top/icon-hours.png" alt="" aria-hidden="true">
+            <div>
+              <p class="shop-label">営業時間</p>
+              <p class="shop-val">10:00〜19:00</p>
+              <p class="shop-sub2">（LO18:30）</p>
+            </div>
+          </div>
+          <div class="shop-divider-v"></div>
+          <div class="shop-detail">
+            <img class="shop-icon" src="images/top/icon-closed.png" alt="" aria-hidden="true">
+            <div>
+              <p class="shop-label">定休日</p>
+              <p class="shop-val">毎週木曜日</p>
+            </div>
+          </div>
+          <div class="shop-divider-v"></div>
+          <div class="shop-detail">
+            <img class="shop-icon" src="images/top/icon-tel.png" alt="" aria-hidden="true">
+            <div>
+              <p class="shop-label">電話番号</p>
+              <p class="shop-val">123-4567-8901</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="shop-map">
+        <img class="shop-map-img" src="images/top/shop-map.jpg" alt="店舗マップ">
+      </div>
+    </div>
+  </section>
+
+</main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-center">
+    <p class="footer-copy">© Cafe and Bakery HIDAMARI. All rights reserved.</p>
+    <div class="footer-sns">
+      <a href="#" class="sns-btn" aria-label="Instagram">
+        <img src="images/common/icon_instagram.png" alt="Instagram">
+      </a>
+      <a href="#" class="sns-btn" aria-label="Facebook">
+        <img src="images/common/icon-facebook.png" alt="Facebook">
+      </a>
+    </div>
+  </div>
+  <a href="#" class="pagetop" id="js-pagetop" aria-label="ページトップへ">
+    <img src="images/common/btn_pagetop.png" alt="PAGE TOP">
+  </a>
+</footer>
+
+
+<script>
+/* ── ヒーロースライダー ── */
+(function(){
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots   = document.querySelectorAll('.hero-dot');
+  let cur = 0, timer;
+  function go(n){
+    slides[cur].classList.remove('is-active');
+    dots[cur].classList.remove('is-active');
+    cur = (n + slides.length) % slides.length;
+    slides[cur].classList.add('is-active');
+    dots[cur].classList.add('is-active');
+  }
+  function auto(){ timer = setInterval(() => go(cur + 1), 4500); }
+  dots.forEach(d => d.addEventListener('click', function(){
+    clearInterval(timer); go(+this.dataset.slide); auto();
+  }));
+  auto();
+})();
+
+/* ── ハンバーガーメニュー ── */
+(function(){
+  const btn = document.getElementById('js-toggle');
+  const nav = document.getElementById('js-nav');
+  btn.addEventListener('click', function(){
+    const open = nav.classList.toggle('is-open');
+    btn.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('.nav-link').forEach(a => {
+    a.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+      btn.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+
+/* ── PAGE TOP ── */
+(function(){
+  const btn = document.getElementById('js-pagetop');
+
+  function checkPosition() {
+    const footer = document.querySelector('.site-footer');
+    if (!footer) return;
+    const footerTop = footer.getBoundingClientRect().top;
+    const visible = footerTop < window.innerHeight;
+    btn.style.opacity = visible ? '1' : '0';
+    btn.style.pointerEvents = visible ? 'auto' : 'none';
+  }
+
+  window.addEventListener('scroll', checkPosition, { passive: true });
+  window.addEventListener('resize', checkPosition, { passive: true });
+  document.addEventListener('fullscreenchange', checkPosition);
+})();
+
+
+(function(){
+  let timer;
+  window.addEventListener('resize', function(){
+    clearTimeout(timer);
+    timer = setTimeout(function(){
+      document.body.classList.remove('no-transition');
+    }, 300);
+  });
+})();
+</script>
+
+</body>
+</html>

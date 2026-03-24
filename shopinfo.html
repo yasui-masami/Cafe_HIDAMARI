@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Info | Cafe and Bakery HIDAMARI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/shopinfo.css">
+
+</head>
+<body>
+
+<!-- ── 木目帯 ＋ ロゴ ── -->
+<div class="hero-wood-wrap">
+  <img class="hero-wood-img" src="images/common/bg_wood1.png" alt="" aria-hidden="true">
+  <a href="index.html" class="hero-logo-link">
+    <img class="hero-logo-img" src="images/common/logo.png" alt="Cafe and Bakery HIDAMARI">
+  </a>
+</div>
+
+<!-- ── ヘッダー ── -->
+<header class="site-header">
+  <div class="header-inner">
+    <nav class="global-nav">
+      <button class="nav-toggle" id="js-toggle" aria-label="メニュー" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-list" id="js-nav">
+        <li class="nav-item">
+          <a href="news.html" class="nav-link">
+            <span class="nav-en">News</span>
+            <span class="nav-ja">お知らせ</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <img class="nav-flower" src="images/common/deco-flower.png" alt="" aria-hidden="true">
+          <a href="about.html" class="nav-link">
+            <span class="nav-en">About us</span>
+            <span class="nav-ja">私たちについて</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <img class="nav-flower" src="images/common/deco-flower.png" alt="" aria-hidden="true">
+          <a href="menu.html" class="nav-link">
+            <span class="nav-en">Menu</span>
+            <span class="nav-ja">メニュー</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <img class="nav-flower" src="images/common/deco-flower.png" alt="" aria-hidden="true">
+          <a href="shopinfo.html" class="nav-link">
+            <span class="nav-en">Shop Info</span>
+            <span class="nav-ja">店舗情報</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<!-- ── ページヒーロー（静的） ── -->
+<section class="page-hero">
+  <img class="page-hero-img" src="images/shop_info/shopinfo-hero.jpg" alt="Shop Info">
+  <div class="hero-overlay"></div>
+</section>
+
+<!-- ── メインコンテンツ ── -->
+<div class="page-wrap">
+  <main class="main-inner">
+
+    <section class="card" id="shopinfo-page">
+
+      <!-- タイトル -->
+      <div class="sec-head">
+        <img class="sec-deco" src="images/top/reaf1.png" alt="" aria-hidden="true">
+        <h1 class="sec-title">Shop Info</h1>
+        <img class="sec-deco sec-deco--r" src="images/top/reaf2.png" alt="" aria-hidden="true">
+      </div>
+
+      <!-- マップ -->
+      <div class="si-map-wrap">
+        <img class="si-map-img" src="images/shop_info/map.jpg" alt="店舗マップ">
+      </div>
+
+      <!-- 情報リスト ＋ エンブレム -->
+      <div class="si-body">
+
+        <div class="si-rows">
+
+          <!-- アクセス -->
+          <div class="si-row">
+            <img class="si-icon" src="images/shop_info/icon-accsess.png" alt="" aria-hidden="true">
+            <span class="si-label">アクセス</span>
+            <div class="si-value">
+              茨城県つくば市〇〇１－２１<br>
+              ・〇〇駅より徒歩６分<br>
+              ・駐車場あり（３台）
+            </div>
+          </div>
+          <hr class="si-divider">
+
+          <!-- 営業時間 -->
+          <div class="si-row">
+            <img class="si-icon" src="images/shop_info/icon-hours.png" alt="" aria-hidden="true">
+            <span class="si-label">営業時間</span>
+            <div class="si-value">10:00〜19:00（LO18:30）</div>
+          </div>
+          <hr class="si-divider">
+
+          <!-- 定休日 -->
+          <div class="si-row">
+            <img class="si-icon" src="images/shop_info/icon-closed.png" alt="" aria-hidden="true">
+            <span class="si-label">定休日</span>
+            <div class="si-value">毎週木曜日</div>
+          </div>
+          <hr class="si-divider">
+
+          <!-- 電話番号 -->
+          <div class="si-row">
+            <img class="si-icon" src="images/shop_info/icon-tel.png" alt="" aria-hidden="true">
+            <span class="si-label">電話番号</span>
+            <div class="si-value">123-4567-8901</div>
+          </div>
+          <hr class="si-divider">
+
+          <!-- お支払い -->
+          <div class="si-row">
+            <img class="si-icon" src="images/shop_info/icon-payment.png" alt="" aria-hidden="true">
+            <span class="si-label">お支払い</span>
+            <div class="si-value">現金／各種クレジットカード／キャッシュレス決済</div>
+          </div>
+
+        </div><!-- /.si-rows -->
+
+        <!-- エンブレム -->
+        <div class="si-emblem" aria-hidden="true">
+          <img class="si-emblem-img" src="images/common/logo.png" alt="">
+        </div>
+
+      </div><!-- /.si-body -->
+
+    </section>
+
+  </main>
+</div>
+
+<!-- ── ギャラリー3枚（ページ幅いっぱい） ── -->
+<div class="si-gallery">
+  <div class="si-gallery-item">
+    <img src="images/shop_info/shopinfo１.jpg" alt="店内の様子">
+  </div>
+  <div class="si-gallery-item">
+    <img src="images/shop_info/shopinfo2.jpg" alt="店内の様子">
+  </div>
+  <div class="si-gallery-item">
+    <img src="images/shop_info/shopinfo3.jpg" alt="店外の様子">
+  </div>
+</div>
+
+<!-- ── フッター ── -->
+<footer class="site-footer">
+  <div class="footer-center">
+    <p class="footer-copy">© Cafe and Bakery HIDAMARI. All rights reserved.</p>
+    <div class="footer-sns">
+      <a href="#" class="sns-btn" aria-label="Instagram">
+        <img src="images/common/icon_instagram.png" alt="Instagram">
+      </a>
+      <a href="#" class="sns-btn" aria-label="Facebook">
+        <img src="images/common/icon-facebook.png" alt="Facebook">
+      </a>
+    </div>
+  </div>
+  <a href="#" class="pagetop" id="js-pagetop" aria-label="ページトップへ">
+    <img src="images/common/btn_pagetop.png" alt="PAGE TOP">
+  </a>
+</footer>
+
+<script>
+/* ── ハンバーガーメニュー ── */
+(function () {
+  const btn = document.getElementById('js-toggle');
+  const nav = document.getElementById('js-nav');
+  btn.addEventListener('click', function () {
+    const open = nav.classList.toggle('is-open');
+    btn.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('.nav-link').forEach(a => {
+    a.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+      btn.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+
+/* ── PAGE TOP ── */
+(function () {
+  const btn = document.getElementById('js-pagetop');
+
+  function checkPosition() {
+    const footer = document.querySelector('.site-footer');
+    if (!footer) return;
+    const footerTop = footer.getBoundingClientRect().top;
+    const visible = footerTop < window.innerHeight;
+    btn.style.opacity = visible ? '1' : '0';
+    btn.style.pointerEvents = visible ? 'auto' : 'none';
+  }
+
+  window.addEventListener('scroll', checkPosition, { passive: true });
+  window.addEventListener('resize', checkPosition, { passive: true });
+  document.addEventListener('fullscreenchange', checkPosition);
+})();
+</script>
+
+</body>
+</html>

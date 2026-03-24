@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>News | Cafe and Bakery HIDAMARI</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Serif+JP:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+
+<div class="hero-wood-wrap">
+  <img class="hero-wood-img" src="images/common/bg_wood1.png" alt="" aria-hidden="true">
+  <a href="index.html" class="hero-logo-link">
+    <img class="hero-logo-img" src="images/common/logo.png" alt="Cafe and Bakery HIDAMARI">
+  </a>
+</div>
+
+<header class="site-header">
+  <div class="header-inner">
+    <nav class="global-nav">
+      <button class="nav-toggle" id="js-toggle" aria-label="メニュー" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-list" id="js-nav">
+        <li class="nav-item">
+          <a href="news.html" class="nav-link">
+            <span class="nav-en">News</span>
+            <span class="nav-ja">お知らせ</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <img class="nav-flower" src="images/common/deco-flower.png" alt="" aria-hidden="true">
+          <a href="index.html#about" class="nav-link">
+            <span class="nav-en">About us</span>
+            <span class="nav-ja">私たちについて</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <img class="nav-flower" src="images/common/deco-flower.png" alt="" aria-hidden="true">
+          <a href="index.html#menu" class="nav-link">
+            <span class="nav-en">Menu</span>
+            <span class="nav-ja">メニュー</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <img class="nav-flower" src="images/common/deco-flower.png" alt="" aria-hidden="true">
+          <a href="index.html#shopinfo" class="nav-link">
+            <span class="nav-en">Shop Info</span>
+            <span class="nav-ja">店舗情報</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="news-hero">
+  <img class="news-hero-img" src="images/news/news-hero.jpg" alt="カフェ店内の様子">
+  <div class="news-hero-overlay"></div>
+</div>
+
+<div class="page-wrap">
+  <main class="news-main">
+    <section class="card news-page-card">
+
+      <div class="sec-head">
+        <img class="sec-deco" src="images/top/reaf1.png" alt="" aria-hidden="true">
+        <h1 class="sec-title">News</h1>
+        <img class="sec-deco sec-deco--r" src="images/top/reaf2.png" alt="" aria-hidden="true">
+      </div>
+
+      <!-- 記事が見つからないときのエラー表示 -->
+      <div class="news-detail-wrap" id="js-detail-error" style="display:none;">
+        <p style="color:var(--text-muted); font-family:var(--font-gothic); padding:20px 0;">
+          記事が見つかりませんでした。
+        </p>
+        <a href="news.html" class="news-detail-back">◀ お知らせ一覧に戻る</a>
+      </div>
+
+      <!-- 記事本文（JSで書き込む） -->
+      <div class="news-detail-wrap" id="js-detail-content"></div>
+
+    </section>
+  </main>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-center">
+    <p class="footer-copy">© Cafe and Bakery HIDAMARI. All rights reserved.</p>
+    <div class="footer-sns">
+      <a href="#" class="sns-btn" aria-label="Instagram">
+        <img src="images/common/icon_instagram.png" alt="Instagram">
+      </a>
+      <a href="#" class="sns-btn" aria-label="Facebook">
+        <img src="images/common/icon-facebook.png" alt="Facebook">
+      </a>
+    </div>
+  </div>
+  <a href="#" class="pagetop" id="js-pagetop" aria-label="ページトップへ">
+    <img src="images/common/btn_pagetop.png" alt="PAGE TOP">
+  </a>
+</footer>
+
+<script>
+/* ============================================================
+   ニュース記事データ
+   記事を追加する場合はここに追記するだけでOK
+============================================================ */
+const newsData = {
+  1: {
+    date:     '2026/01/05',
+    datetime: '2026-01-05',
+    title:    '【新年のご挨拶】',
+    img:      'images/news/news1.jpg',
+    imgAlt:   '新年のご挨拶',
+    body: `
+      <p>あけましておめでとうございます。<br>
+      Cafe and Bakery HIDAMARI スタッフ一同、皆さまの新年を心よりお祝い申し上げます。</p>
+      <p>昨年は多くのお客さまにご来店いただき、誠にありがとうございました。
+      皆さまのあたたかいお言葉や笑顔が、私たちの毎日の励みとなっております。</p>
+      <p>今年も変わらず、焼きたてのパンと丁寧に淹れたコーヒーで
+      陽だまりのようなひとときをお届けできるよう、スタッフ一同精進してまいります。
+      新メニューやイベントなども随時ご案内予定ですので、どうぞお楽しみに。</p>
+      <p>本年もどうぞよろしくお願いいたします。</p>
+    `,
+    note: '※年始の営業は1月5日（月）より通常通り営業いたします。<br>※年末年始休業：12月31日（水）〜1月4日（日）'
+  },
+  2: {
+    date:     '2025/12/01',
+    datetime: '2025-12-01',
+    title:    '【年末年始のお知らせ】',
+    img:      'images/news/news2.jpg',
+    imgAlt:   '年末年始のお知らせ',
+    body: `
+      <p>平素より格別のご愛顧を賜り、誠にありがとうございます。</p>
+      <p>誠に勝手ながら、下記の期間を年末年始休業とさせていただきます。</p>
+      <p>休業期間：<strong>12月31日（水）〜 1月4日（日）</strong><br>
+      年始営業：<strong>1月5日（月）</strong> 通常通り10:00よりオープン</p>
+      <p>ご不便をおかけいたしますが、何卒ご理解のほどよろしくお願いいたします。
+      新年もスタッフ一同、皆さまのご来店を心よりお待ちしております。</p>
+    `,
+    note: '※年始はお席が込み合う場合がございます。お時間に余裕を持ってご来店ください。'
+  },
+  3: {
+    date:     '2025/10/10',
+    datetime: '2025-10-10',
+    title:    '【新メニュー】',
+    img:      'images/news/news3.jpg',
+    imgAlt:   '新メニュー アボカドサンドウィッチ',
+    body: `
+      <p>お待たせいたしました！新メニュー「アボカドサンドウィッチ」が登場しました。</p>
+      <p>新鮮なアボカドとクリームチーズ、国産野菜をたっぷりはさんだボリューム満点のサンドウィッチです。
+      自家製の全粒粉パンとの相性も抜群。モーニング・ランチともにお楽しみいただけます。</p>
+      <p>価格：¥1,050（税込み）<br>
+      提供時間：10:00〜売り切れ次第終了</p>
+      <p>数量限定のため、お早めにどうぞ！</p>
+    `,
+    note: '※仕入れ状況により内容が変わる場合がございます。'
+  },
+  4: {
+    date:     '2025/10/01',
+    datetime: '2025-10-01',
+    title:    '【テイクアウトメニュー】',
+    img:      'images/news/news4.jpg',
+    imgAlt:   'テイクアウトメニュー',
+    body: `
+      <p>大変お待たせいたしました。焼きたてパンのテイクアウトメニューが大幅に増えました！</p>
+      <p>店内でお楽しみいただいているパンを、お持ち帰り用にご用意しております。
+      贈り物やご家庭でのティータイムにもぴったりです。</p>
+      <p>テイクアウト対応メニュー（一例）：<br>
+      ・クロワッサン（¥220）<br>
+      ・あんバター（¥280）<br>
+      ・季節のフルーツデニッシュ（¥320）<br>
+      ・食パン 1斤（¥680）</p>
+      <p>専用ボックスでお渡ししますので、手土産にも喜ばれています。ぜひご利用ください。</p>
+    `,
+    note: '※テイクアウトはご来店のみの受付となります。予約は承っておりません。'
+  },
+  5: {
+    date:     '2025/09/01',
+    datetime: '2025-09-01',
+    title:    '【秋限定メニュー】',
+    img:      'images/news/news5.jpg',
+    imgAlt:   '秋限定メニュー かぼちゃのプリン',
+    body: `
+      <p>秋の味覚をたっぷり使った限定メニュー「かぼちゃのプリン」が登場しました！</p>
+      <p>北海道産かぼちゃを使ったなめらかなプリンに、自家製キャラメルソースをたっぷりとかけた一品です。
+      ほっくりとした甘さとビターなキャラメルが絶妙にマッチしています。</p>
+      <p>価格：¥480（税込み）<br>
+      提供期間：〜10月31日（金）まで</p>
+      <p>秋限定の味をぜひお楽しみください。数に限りがございますのでお早めに！</p>
+    `,
+    note: '※10月31日（金）までの限定メニューです。なくなり次第終了となります。'
+  },
+  6: {
+    date:     '2025/07/20',
+    datetime: '2025-07-20',
+    title:    '【お盆休みのお知らせ】',
+    img:      'images/news/news6.jpg',
+    imgAlt:   'お盆休みのお知らせ',
+    body: `
+      <p>平素より格別のご愛顧を賜り、誠にありがとうございます。</p>
+      <p>誠に勝手ながら、下記の期間をお盆休業とさせていただきます。</p>
+      <p>休業期間：<strong>8月13日（水）〜 8月17日（日）</strong><br>
+      通常営業再開：<strong>8月18日（月）</strong> 10:00より</p>
+      <p>ご不便をおかけいたしますが、何卒ご理解のほどよろしくお願いいたします。
+      休業明けも皆さまのご来店を心よりお待ちしております。</p>
+    `,
+    note: '※休業中のお問い合わせにつきましては、営業再開後に順次ご対応いたします。'
+  },
+  7: {
+    date:     '2025/04/01',
+    datetime: '2025-04-01',
+    title:    '【サイトリニューアルのお知らせ】',
+    img:      'images/news/news7.jpg',
+    imgAlt:   'サイトリニューアル',
+    body: `
+      <p>この度、Cafe and Bakery HIDAMARI の公式ウェブサイトをリニューアルいたしました。</p>
+      <p>より見やすく、より使いやすいデザインへ生まれ変わりました。
+      メニューや店舗情報の確認もスムーズにご覧いただけるようになっております。</p>
+      <p>今後もお知らせや新メニューの情報を随時更新してまいりますので、
+      ぜひブックマークしてご活用ください。</p>
+      <p>引き続き HIDAMARI をよろしくお願いいたします。</p>
+    `,
+    note: ''
+  }
+};
+
+
+/* ============================================================
+   URLパラメータから記事IDを取得して表示
+============================================================ */
+(function(){
+  const params  = new URLSearchParams(window.location.search);
+  const id      = parseInt(params.get('id'), 10);
+  const article = newsData[id];
+  const content = document.getElementById('js-detail-content');
+  const error   = document.getElementById('js-detail-error');
+
+  if (!article) {
+    error.style.display = 'block';
+    return;
+  }
+
+  /* ページタイトルを記事タイトルに変更 */
+  document.title = article.title + ' | News | Cafe and Bakery HIDAMARI';
+
+  /* 注釈は内容があるときだけ表示 */
+  const noteHTML = article.note
+    ? `<div class="news-detail-note">${article.note}</div>`
+    : '';
+
+  content.innerHTML = `
+    <time class="news-detail-date" datetime="${article.datetime}">${article.date}</time>
+    <p class="news-detail-title">${article.title}</p>
+    <div class="news-detail-layout">
+      <div class="news-detail-left">
+        <div class="news-detail-body">${article.body}</div>
+      </div>
+      <img class="news-detail-img" src="${article.img}" alt="${article.imgAlt}">
+    </div>
+    ${noteHTML}
+    <a href="news.html" class="news-detail-back">◀ お知らせ一覧に戻る</a>
+  `;
+})();
+
+
+/* ── ハンバーガーメニュー ── */
+(function(){
+  const btn = document.getElementById('js-toggle');
+  const nav = document.getElementById('js-nav');
+  btn.addEventListener('click', function(){
+    const open = nav.classList.toggle('is-open');
+    btn.classList.toggle('is-open', open);
+    btn.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('.nav-link').forEach(a => {
+    a.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+      btn.classList.remove('is-open');
+      btn.setAttribute('aria-expanded', 'false');
+    });
+  });
+})();
+
+/* ── PAGE TOP ── */
+(function(){
+  const btn = document.getElementById('js-pagetop');
+  function checkPosition() {
+    const footer = document.querySelector('.site-footer');
+    if (!footer) return;
+    const footerTop = footer.getBoundingClientRect().top;
+    const visible = footerTop < window.innerHeight;
+    btn.style.opacity       = visible ? '1' : '0';
+    btn.style.pointerEvents = visible ? 'auto' : 'none';
+  }
+  window.addEventListener('scroll', checkPosition, { passive: true });
+  window.addEventListener('resize', checkPosition, { passive: true });
+})();
+</script>
+
+</body>
+</html>
