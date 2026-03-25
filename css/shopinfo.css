@@ -189,8 +189,7 @@
    レスポンシブ — タブレット（≤ 880px）
 ────────────────────────────────────────── */
 @media (max-width: 880px) {
-  .page-hero {
-    height: clamp(220px, 42vw, 420px);
+  .page-hero { height: 220px; }
   }
 
   .si-body {
